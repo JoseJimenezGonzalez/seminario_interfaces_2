@@ -180,12 +180,12 @@ class MainActivity2 : AppCompatActivity() {
             array2D[row][col] = textoJugador
             verificarGanador()
 
-            // Añade un retraso antes de que la CPU juegue
+            // Retraso antes de que la CPU juegue
             handler.postDelayed({
                 if (!juegoTerminado) {
                     jugarTurnoCPU()
                 }
-            }, 3000) // 1000 ms (1 segundo) de retraso
+            }, 3000)
         }
     }
 

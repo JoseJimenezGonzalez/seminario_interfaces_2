@@ -4,41 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity5">
 
     <TextView
         android:id="@+id/tvDescripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seminario Ejercicios!"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="10dp"
-        android:gravity="center"/>
-
-    <Button
-        android:id="@+id/btnEjercicio1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ejercicio 1"
-        app:layout_constraintTop_toBottomOf="@id/tvDescripcion">
-    </Button>
-
-    <Button
-        android:id="@+id/btnEjercicio2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ejercicio 2"
-        app:layout_constraintTop_toBottomOf="@id/btnEjercicio1">
-    </Button>
-
-    <Button
-        android:id="@+id/btnEjercicio3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Ejercicio 3"
-        app:layout_constraintTop_toBottomOf="@id/btnEjercicio2">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="10dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <EditText
+        android:id="@+id/etCadena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Cadena a insertar">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnInsertarDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar dato"
+        app:layout_constraintTop_toBottomOf="@id/etCadena"
+        app:layout_constraintStart_toStartOf="parent">
     </Button>
+
+    <Button
+        android:id="@+id/btnPasarCadena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pasar datos a nueva actividad"
+        app:layout_constraintTop_toBottomOf="@id/btnInsertarDato"
+        app:layout_constraintStart_toStartOf="parent">
+    </Button>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

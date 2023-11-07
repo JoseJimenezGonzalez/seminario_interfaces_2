@@ -17,8 +17,19 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Primer boton
         binding.btnEjercicio1.setOnClickListener {
             val intent = Intent(this@MainActivity, MainActivity2::class.java)
+            startActivity(intent)
+        }
+        //Segundo boton
+        binding.btnEjercicio2.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        //Tercer boton
+        binding.btnEjercicio3.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity5::class.java)
             startActivity(intent)
         }
 
