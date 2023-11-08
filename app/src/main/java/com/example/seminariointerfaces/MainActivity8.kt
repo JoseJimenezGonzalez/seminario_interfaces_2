@@ -15,6 +15,10 @@ class MainActivity8 : AppCompatActivity() {
         binding = ActivityMain8Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        cargarDatosIU()
+    }
+
+    private fun cargarDatosIU() {
         val pais = intent.getParcelableExtra<Pais>("paisPasalo")?: Pais("", -1, -1)
 
         binding.tvNombre.text = pais.nombre
