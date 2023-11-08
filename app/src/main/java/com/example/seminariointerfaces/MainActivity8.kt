@@ -20,7 +20,7 @@ class MainActivity8 : AppCompatActivity() {
 
     private fun cargarDatosIU() {
 
-        val pais = intent.getParcelableExtra<Pais>("paisPasalo")?: Pais("", -1, -1)
+        val pais = intent.getParcelableExtra("paisPasalo", Pais::class.java)?: Pais("", -1, -1)
         binding.tvNombre.text = pais.nombre
         binding.ivFotoPais.setImageResource(obtenerFoto(pais.foto))
         binding.tvHabitantesPais.text = pais.habitantes.toString()
