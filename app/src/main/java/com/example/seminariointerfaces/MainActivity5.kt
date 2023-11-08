@@ -3,8 +3,8 @@ package com.example.seminariointerfaces
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.seminariointerfaces.databinding.ActivityMain4Binding
 import com.example.seminariointerfaces.databinding.ActivityMain5Binding
+import kotlin.text.StringBuilder
 
 class MainActivity5 : AppCompatActivity() {
 
@@ -26,8 +26,14 @@ class MainActivity5 : AppCompatActivity() {
         }
         binding.btnPasarCadena.setOnClickListener {
             val intent = Intent(this@MainActivity5, MainActivity6::class.java)
-            intent.putExtra("texto", textoParaOtraActividad)
+            intent.putExtra("texto", eliminarComaYEspacio(textoParaOtraActividad))
             startActivity(intent)
         }
+    }
+
+    fun eliminarComaYEspacio(palabra: String): String {
+        var pal = StringBuilder(palabra)
+        pal.delete(pal.length - 2, pal.length - 1)
+        return pal.toString()
     }
 }

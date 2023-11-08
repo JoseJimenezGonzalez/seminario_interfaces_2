@@ -32,6 +32,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, MainActivity5::class.java)
             startActivity(intent)
         }
+        //Cuarto boton
+        binding.btnEjercicio4.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity7::class.java)
+            startActivity(intent)
+        }
 
     }
 }

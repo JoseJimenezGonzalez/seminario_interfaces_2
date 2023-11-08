@@ -41,4 +41,12 @@
         app:layout_constraintTop_toBottomOf="@id/btnEjercicio2">
     </Button>
 
+    <Button
+        android:id="@+id/btnEjercicio4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 4"
+        app:layout_constraintTop_toBottomOf="@id/btnEjercicio3">
+    </Button>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
