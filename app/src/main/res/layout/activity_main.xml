@@ -49,4 +49,47 @@
         app:layout_constraintTop_toBottomOf="@id/btnEjercicio3">
     </Button>
 
+    <TextView
+        android:id="@+id/tvMaqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maqueta Ejercicios!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEjercicio4"
+        android:padding="10dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvMaqueta"
+        android:text="Maqueta 1">
+    </Button>
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn5"
+        android:text="Maqueta 2">
+    </Button>
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn6"
+        android:text="Maqueta 3">
+    </Button>
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn7"
+        android:text="Maqueta 4">
+    </Button>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
