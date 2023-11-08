@@ -19,18 +19,21 @@ class MainActivity8 : AppCompatActivity() {
     }
 
     private fun cargarDatosIU() {
-        val pais = intent.getParcelableExtra<Pais>("paisPasalo")?: Pais("", -1, -1)
 
+        val pais = intent.getParcelableExtra<Pais>("paisPasalo")?: Pais("", -1, -1)
         binding.tvNombre.text = pais.nombre
         binding.ivFotoPais.setImageResource(obtenerFoto(pais.foto))
         binding.tvHabitantesPais.text = pais.habitantes.toString()
+
     }
 
     fun obtenerFoto(numero: Int): Int{
+
         if (numero == 1){
             return R.drawable.img_esp
         }else{
             return R.drawable.img_france
         }
+
     }
 }
