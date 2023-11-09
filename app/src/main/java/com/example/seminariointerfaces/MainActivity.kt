@@ -50,5 +50,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //Septimo boton
+        binding.btn7.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity11::class.java)
+            startActivity(intent)
+        }
+        //Octavo boton
+        binding.btn8.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity12::class.java)
+            startActivity(intent)
+        }
+
     }
 }
