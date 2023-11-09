@@ -38,5 +38,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //Quinto boton
+        binding.btn5.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity9::class.java)
+            startActivity(intent)
+        }
+
+        //Sexto boton
+        binding.btn6.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity10::class.java)
+            startActivity(intent)
+        }
+
     }
 }
