@@ -14,7 +14,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="10dp"
-        android:textAlignment="center">
+        android:textAlignment="center"
+        android:background="#7986CB">
     </TextView>
 
     <EditText
@@ -28,20 +29,22 @@
 
     <Button
         android:id="@+id/btnInsertarDato"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Insertar dato"
         app:layout_constraintTop_toBottomOf="@id/etCadena"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
     </Button>
 
     <Button
         android:id="@+id/btnPasarCadena"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pasar datos a nueva actividad"
         app:layout_constraintTop_toBottomOf="@id/btnInsertarDato"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
     </Button>
 
 

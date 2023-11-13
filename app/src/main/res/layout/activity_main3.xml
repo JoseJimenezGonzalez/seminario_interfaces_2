@@ -17,6 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/etNumero"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="#7986CB"
         android:textSize="24sp">
     </TextView>
 
@@ -44,7 +45,7 @@
 
     <Button
         android:id="@+id/btnPasarDatos"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pasar datos"
         app:layout_constraintTop_toBottomOf="@id/etTexto"

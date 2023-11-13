@@ -14,23 +14,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="10dp"
-        android:textAlignment="center">
+        android:textAlignment="center"
+        android:background="#7986CB">
     </TextView>
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="España"
-        app:layout_constraintTop_toBottomOf="@id/tvDescripcion">
+        app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
     </Button>
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Francia"
-        app:layout_constraintTop_toBottomOf="@id/btn1">
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
     </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

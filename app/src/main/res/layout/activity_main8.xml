@@ -14,7 +14,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="10dp"
-        android:textAlignment="center">
+        android:textAlignment="center"
+        android:background="#7986CB">
     </TextView>
 
     <TextView
