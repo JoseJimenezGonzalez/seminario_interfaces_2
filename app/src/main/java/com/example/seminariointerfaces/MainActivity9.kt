@@ -42,7 +42,7 @@ class MainActivity9 : AppCompatActivity() {
             Toast.makeText(this, "Esto es una pokedex", Toast.LENGTH_SHORT).show()
         }
         binding.btn2.setOnClickListener {
-            Toast.makeText(this, "Hazte con todos", Toast.LENGTH_SHORT).show()
+            finish()
         }
         binding.btn3.setOnClickListener {
             Toast.makeText(this, "Dale a la pokeball", Toast.LENGTH_SHORT).show()

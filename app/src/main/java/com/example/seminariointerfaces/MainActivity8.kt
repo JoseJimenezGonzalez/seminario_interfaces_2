@@ -1,5 +1,6 @@
 package com.example.seminariointerfaces
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.seminariointerfaces.databinding.ActivityMain7Binding
@@ -16,6 +17,7 @@ class MainActivity8 : AppCompatActivity() {
         setContentView(binding.root)
 
         cargarDatosIU()
+        configurarBotonBack()
     }
 
     private fun cargarDatosIU() {
@@ -35,5 +37,11 @@ class MainActivity8 : AppCompatActivity() {
             return R.drawable.img_france
         }
 
+    }
+    private fun configurarBotonBack() {
+        binding.btnEjercicio4Back.setOnClickListener {
+            val intent = Intent(this@MainActivity8, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

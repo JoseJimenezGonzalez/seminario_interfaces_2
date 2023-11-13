@@ -15,12 +15,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lyTesRaya"
+        android:textSize="20sp"
         android:text="Tres en raya">
     </TextView>
 
     <LinearLayout
+        android:id="@+id/lyTesRaya"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+        app:layout_constraintBottom_toTopOf="@id/btnTresRayaBack"
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:background="@drawable/back"
@@ -109,5 +113,16 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTresRayaBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyTesRaya"
+        android:text="Volver a la actividad anterior">
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

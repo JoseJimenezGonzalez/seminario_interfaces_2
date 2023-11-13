@@ -16,6 +16,10 @@ class MainActivity3 : AppCompatActivity() {
         binding = ActivityMain3Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        configurarBotonPasarDatos()
+    }
+
+    private fun configurarBotonPasarDatos() {
         binding.btnPasarDatos.setOnClickListener {
             val intent = Intent(this@MainActivity3, MainActivity4::class.java)
             //Pillo los valores de texto y numero

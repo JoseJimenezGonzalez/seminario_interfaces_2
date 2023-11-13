@@ -43,5 +43,14 @@
         android:padding="10dp"
         android:textAlignment="center">
     </TextView>
+    <Button
+        android:id="@+id/btnEjercicio4Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver a la actividad principal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHabitantesPais">
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

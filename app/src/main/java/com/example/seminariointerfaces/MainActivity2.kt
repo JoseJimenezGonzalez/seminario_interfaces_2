@@ -30,6 +30,13 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(binding.root)
 
         iniciarJuego()
+        configurarBotonRetroceso()
+    }
+
+    private fun configurarBotonRetroceso() {
+        binding.btnTresRayaBack.setOnClickListener {
+            finish()
+        }
     }
 
     private fun iniciarJuego() {

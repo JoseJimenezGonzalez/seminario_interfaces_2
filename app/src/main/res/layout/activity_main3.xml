@@ -14,7 +14,10 @@
         android:textAlignment="center"
         android:padding="10dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp">
     </TextView>
 
     <EditText
@@ -23,6 +26,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etTexto"
         android:hint="Número que vamos a pasar">
     </EditText>
 
@@ -32,6 +37,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/etNumero"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnPasarDatos"
         android:hint="Texto que vamos a pasar">
     </EditText>
 
@@ -41,7 +48,8 @@
         android:layout_height="wrap_content"
         android:text="Pasar datos"
         app:layout_constraintTop_toBottomOf="@id/etTexto"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
     </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,10 +10,24 @@
         android:id="@+id/tvDescripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seminario Ejercicios!"
+        android:text="Ejercicios del seminario de interfaces"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvEjercicios"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvEjercicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnEjercicio1"
+        app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
         android:padding="10dp"
         android:gravity="center"/>
 
@@ -22,7 +36,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ejercicio 1"
-        app:layout_constraintTop_toBottomOf="@id/tvDescripcion">
+        app:layout_constraintTop_toBottomOf="@id/tvEjercicios"
+        app:layout_constraintBottom_toTopOf="@id/btnEjercicio2"
+        app:layout_constraintStart_toStartOf="parent">
     </Button>
 
     <Button
@@ -30,7 +46,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ejercicio 2"
-        app:layout_constraintTop_toBottomOf="@id/btnEjercicio1">
+        app:layout_constraintTop_toBottomOf="@id/btnEjercicio1"
+        app:layout_constraintBottom_toTopOf="@id/btnEjercicio3"
+        app:layout_constraintStart_toStartOf="parent">
     </Button>
 
     <Button
@@ -38,7 +56,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ejercicio 3"
-        app:layout_constraintTop_toBottomOf="@id/btnEjercicio2">
+        app:layout_constraintTop_toBottomOf="@id/btnEjercicio2"
+        app:layout_constraintBottom_toTopOf="@id/btnEjercicio4"
+        app:layout_constraintStart_toStartOf="parent">
     </Button>
 
     <Button
@@ -46,17 +66,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ejercicio 4"
-        app:layout_constraintTop_toBottomOf="@id/btnEjercicio3">
+        app:layout_constraintTop_toBottomOf="@id/btnEjercicio3"
+        app:layout_constraintBottom_toTopOf="@id/tvMaqueta"
+        app:layout_constraintStart_toStartOf="parent">
     </Button>
 
     <TextView
         android:id="@+id/tvMaqueta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Maqueta Ejercicios!"
+        android:text="Maquetas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnEjercicio4"
+        app:layout_constraintBottom_toTopOf="@id/btn5"
         android:padding="10dp"
         android:gravity="center"/>
 
@@ -65,6 +88,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvMaqueta"
+        app:layout_constraintBottom_toTopOf="@id/btn6"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="Maqueta 1">
     </Button>
 
@@ -73,6 +98,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btn5"
+        app:layout_constraintBottom_toTopOf="@id/btn7"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="Maqueta 2">
     </Button>
 
@@ -81,6 +108,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btn6"
+        app:layout_constraintBottom_toTopOf="@id/btn8"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="Maqueta 3">
     </Button>
 
@@ -89,6 +118,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btn7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="Maqueta 4">
     </Button>
 
