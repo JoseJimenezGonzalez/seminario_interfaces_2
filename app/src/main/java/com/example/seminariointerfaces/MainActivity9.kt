@@ -16,6 +16,13 @@ class MainActivity9 : AppCompatActivity() {
         binding = ActivityMain9Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        configurarAccionBotones()
+
+
+    }
+
+    private fun configurarAccionBotones() {
         binding.ivPokeball.setOnClickListener {
             val animacionRotacion = AnimationUtils.loadAnimation(this, R.anim.rotate_360)
             binding.ivPokeball.startAnimation(animacionRotacion)
