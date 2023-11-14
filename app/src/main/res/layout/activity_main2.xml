@@ -20,10 +20,23 @@
         android:text="Tres en raya">
     </TextView>
 
+    <TextView
+        android:id="@+id/tvGanador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp">
+    </TextView>
+
+
     <LinearLayout
         android:id="@+id/lyTesRaya"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+        app:layout_constraintTop_toBottomOf="@id/tvGanador"
         app:layout_constraintBottom_toTopOf="@id/btnTresRayaBack"
         android:layout_width="400dp"
         android:layout_height="400dp"
@@ -115,13 +128,24 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnVolverAJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnTresRayaBack"
+        app:layout_constraintTop_toBottomOf="@id/lyTesRaya"
+        android:text="Volver a jugar">
+    </Button>
+
+    <Button
         android:id="@+id/btnTresRayaBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lyTesRaya"
+        app:layout_constraintTop_toBottomOf="@id/btnVolverAJugar"
         android:text="Volver a la actividad anterior">
     </Button>
 
