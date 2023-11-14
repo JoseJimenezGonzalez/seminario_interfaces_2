@@ -74,6 +74,42 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
+    private fun realizarMovimiento(row: Int, col: Int) {
+        if (array2D[row][col] == textoInicial && !juegoTerminado) {
+            // Verifica que la casilla esté vacía y el juego no haya terminado
+            when (row) {
+                0 -> when (col) {
+                    0 -> binding.iv1.setImageResource(R.drawable.close)
+                    1 -> binding.iv2.setImageResource(R.drawable.close)
+                    2 -> binding.iv3.setImageResource(R.drawable.close)
+                }
+
+                1 -> when (col) {
+                    0 -> binding.iv4.setImageResource(R.drawable.close)
+                    1 -> binding.iv5.setImageResource(R.drawable.close)
+                    2 -> binding.iv6.setImageResource(R.drawable.close)
+                }
+
+                2 -> when (col) {
+                    0 -> binding.iv7.setImageResource(R.drawable.close)
+                    1 -> binding.iv8.setImageResource(R.drawable.close)
+                    2 -> binding.iv9.setImageResource(R.drawable.close)
+                }
+            }
+
+
+            array2D[row][col] = textoJugador
+            verificarGanador()
+
+            // Retraso antes de que la CPU juegue
+            handler.postDelayed({
+                if (!juegoTerminado) {
+                    jugarTurnoCPU()
+                }
+            }, 1000)
+        }
+    }
+
     private fun jugarTurnoCPU() {
         if (!juegoTerminado) {
             loop@ for (i in array2D.indices) {
@@ -114,41 +150,6 @@ class MainActivity2 : AppCompatActivity() {
 
     }
 
-    private fun realizarMovimiento(row: Int, col: Int) {
-        if (array2D[row][col] == textoInicial && !juegoTerminado) {
-            // Verifica que la casilla esté vacía y el juego no haya terminado
-            when (row) {
-                0 -> when (col) {
-                    0 -> binding.iv1.setImageResource(R.drawable.close)
-                    1 -> binding.iv2.setImageResource(R.drawable.close)
-                    2 -> binding.iv3.setImageResource(R.drawable.close)
-                }
-
-                1 -> when (col) {
-                    0 -> binding.iv4.setImageResource(R.drawable.close)
-                    1 -> binding.iv5.setImageResource(R.drawable.close)
-                    2 -> binding.iv6.setImageResource(R.drawable.close)
-                }
-
-                2 -> when (col) {
-                    0 -> binding.iv7.setImageResource(R.drawable.close)
-                    1 -> binding.iv8.setImageResource(R.drawable.close)
-                    2 -> binding.iv9.setImageResource(R.drawable.close)
-                }
-            }
-
-
-            array2D[row][col] = textoJugador
-            verificarGanador()
-
-            // Retraso antes de que la CPU juegue
-            handler.postDelayed({
-                if (!juegoTerminado) {
-                    jugarTurnoCPU()
-                }
-            }, 1500)
-        }
-    }
 
 
     private fun verificarGanador() {
