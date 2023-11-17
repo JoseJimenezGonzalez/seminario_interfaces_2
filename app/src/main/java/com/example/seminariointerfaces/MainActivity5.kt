@@ -18,6 +18,10 @@ class MainActivity5 : AppCompatActivity() {
         binding = ActivityMain5Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        configurarBotones()
+    }
+
+    private fun configurarBotones() {
         binding.btnInsertarDato.setOnClickListener {
             val textoEditText = binding.etCadena.text.toString()
             textoParaOtraActividad += "$textoEditText, "

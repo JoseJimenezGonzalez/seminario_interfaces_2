@@ -17,6 +17,10 @@ class MainActivity7 : AppCompatActivity() {
         binding = ActivityMain7Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        configurarBotones()
+    }
+
+    private fun configurarBotones() {
         //Boton españa
         binding.btn1.setOnClickListener {
             //Generemos España
