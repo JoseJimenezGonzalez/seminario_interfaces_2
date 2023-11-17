@@ -106,7 +106,7 @@ class MainActivity2 : AppCompatActivity() {
                 if (!juegoTerminado) {
                     jugarTurnoCPU()
                 }
-            }, 1000)
+            }, 500)
         }
     }
 
