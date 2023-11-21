@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:orientation="horizontal"
         android:padding="10dp"
         android:background="#5AC3A1">
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/lyDescripcion"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:orientation="horizontal"
         android:background="#DAB8B8"
         android:padding="10dp">
@@ -61,6 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/lyPrimerElemento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:text="Resultados de la busqueda"
         android:padding="5dp">
     </TextView>
