@@ -25,7 +25,7 @@ class MainActivity8 : AppCompatActivity() {
         val pais = intent.getParcelableExtra("paisPasalo", Pais::class.java)?: Pais("", -1, -1)
         binding.tvNombre.text = pais.nombre
         binding.ivFotoPais.setImageResource(obtenerFoto(pais.foto))
-        binding.tvHabitantesPais.text = pais.habitantes.toString()
+        binding.tvHabitantesPais.text = "Habitantes: " + pais.habitantes.toString()
 
     }
 
